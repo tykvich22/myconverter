@@ -4,6 +4,7 @@ import postcssNested from 'postcss-nested';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base: '/myconverter',
 	plugins: [react()],
 	css: {
 		postcss: {
