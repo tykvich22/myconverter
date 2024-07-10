@@ -1,24 +1,24 @@
 import ReactDOM from 'react-dom/client';
 import Home from './Home';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 
 import { NotFound } from './pages/NotFound';
 import { Currencies } from './pages/Сurrencies';
 import { Converter } from './pages/Converter';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
 	{
 		path: '/',
 		element: <Home />,
 		errorElement: <NotFound />,
 		children: [
 			{
-				path: 'currencies',
+				path: '/currencies',
 				element: <Currencies />,
 			},
 			{
-				path: 'converter',
+				path: '/converter',
 				element: <Converter />,
 			},
 		],

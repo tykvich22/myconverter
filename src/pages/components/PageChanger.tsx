@@ -9,7 +9,7 @@ export const PageChanger: React.FC = () => {
 
 	return (
 		<div className={Page_changer.pages_changer}>
-			<Link to="currencies">
+			<Link to="/currencies">
 				<button
 					className={`${Global.button_global} ${Page_changer.button_pages_changer}`}
 					disabled={location.pathname === '/currencies'}
@@ -30,7 +30,7 @@ export const PageChanger: React.FC = () => {
 					<span className={Page_changer.sr_only}>Валюты</span>
 				</button>
 			</Link>
-			<Link to="converter">
+			<Link to="/converter">
 				<button
 					className={`${Global.button_global} ${Page_changer.button_pages_changer}`}
 					disabled={location.pathname === '/converter'}
