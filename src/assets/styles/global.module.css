@@ -1,0 +1,36 @@
+.button_global {
+	min-width: 100px;
+	border: 0;
+	border-radius: 5px;
+	background-color: #4676d7;
+	color: #fff;
+	padding: 8px 16px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	transition-property: background-color, box-shadow;
+
+	&:hover {
+		background-color: #1d49aa;
+	}
+
+	&:active {
+		box-shadow: 0 0 0 4px #cbd6ee;
+	}
+
+	&:disabled {
+		color: #d2d5db;
+		background-color: #6c7589;
+		cursor: not-allowed;
+		box-shadow: none;
+	}
+}
+
+.title_1 {
+	margin: 0 0 20px 25px;
+	font-size: 1.8rem;
+}
+
+.title_2 {
+	font-size: 1.2rem;
+}

@@ -1,0 +1,28 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Source Code Pro', monospace;
+	background-color: #efefef;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	background-color: #ffff;
+	width: 80%;
+	margin: 65px auto;
+	border-radius: 10px;
+	outline: 3px solid #f1f1f1;
+	padding: 0.05px;
+
+	@media (max-width: 700px) {
+		width: 100%;
+		margin: 10px auto;
+	}
+}

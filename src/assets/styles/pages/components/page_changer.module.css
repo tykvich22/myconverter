@@ -1,0 +1,46 @@
+.pages_changer {
+	margin: 25px 0 15px 25px;
+	border-bottom: 1px solid #1d49aa;
+	width: 45%;
+}
+
+.button_pages_changer {
+	margin: 0 0 10px 10px;
+
+	& svg {
+		color: #ffffff;
+		display: inline-block;
+		vertical-align: middle;
+		width: 15px;
+		height: 15px;
+		margin-right: 0.25rem;
+		position: relative;
+		bottom: 1px;
+	}
+}
+
+@media (max-width: 700px) {
+	.button_pages_changer {
+		min-width: initial;
+		padding: 6px 14px;
+
+		& svg {
+			width: 12px;
+			height: 12px;
+		}
+	}
+
+	.sr_only {
+		border: 0;
+		clip: rect(0 0 0 0);
+		-webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+		clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+		white-space: nowrap;
+	}
+}
